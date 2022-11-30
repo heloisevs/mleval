@@ -1,0 +1,24 @@
+item {
+  name: "person"
+  id: 1
+  display_name: "person"
+}
+
+item {
+  name: "bag"
+  id: 2
+  display_name: "bag"
+}
+
+item {
+  name: "clothing"
+  id: 3
+  display_name: "clothing"
+}
+
+item {
+  name: "laptop"
+  id: 4
+  display_name: "laptop"
+}
+

@@ -1,0 +1,36 @@
+# Classes and labels information
+nc: 4  # number of classes 
+labels: [person, bag, clothing, laptop]
+path_to_labels:  './labels/signs_of_life_4_label_map.pbtxt' 
+subclasses_file: './labels/subclasses_files/sol.txt' #for k210 only
+# Input size for the model
+width: 320
+height: 240
+# Confidence thresholds
+confidence:
+  # TensorFlow models
+  person_confidence_threshold: 0.6
+  object_confidence_threshold: 0.4
+  tf_models_inference: 0.1
+  # YOLO model
+  confidence_threshold_yolo: 0.33
+nms: #
+  nms_threshold: 0.4
+  use_nms: True
+  class_agnostic: True
+# Models paths
+models:
+  full_model: './models/signs_of_life/full_model/model_sol.pb'
+  k210: './models/signs_of_life/k210/Triceratops_B/v2/k210/pod.kmodel'
+  tflite: './models/signs_of_life/tflite/e106/detect_postprocess_uint8_max_detections_30.tflite'
+# Path to input images
+images_dir: './data/validation/images'
+# If debug images wanted
+debug: True
+debug_output_dir: './results'
+# Draw bounding boxes on image. Different ways to draw bb (this is mainly used as verificatiion steps)
+draw_detection:
+  draw_from_inference: False
+  draw_from_json: False
+  draw_from_tf_api: False
+  draw_from_csv: False

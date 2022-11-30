@@ -1,0 +1,11 @@
+item {
+  name: "person"
+  id: 1
+  display_name: "person"
+}
+
+item {
+  name: "bag"
+  id: 2
+  display_name: "bag"
+}

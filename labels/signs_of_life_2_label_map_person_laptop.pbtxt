@@ -1,0 +1,12 @@
+item {
+  name: "person"
+  id: 1
+  display_name: "person"
+}
+
+item {
+  name: "laptop"
+  id: 4
+  display_name: "laptop"
+}
+
